@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/material_dynamic_primary80"
     tools:context=".MainActivity">
 
     <TextView
@@ -63,12 +64,12 @@
 
     <Button
         android:id="@+id/btn_write_data"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Write Data"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_roll_no"
         tools:ignore="HardcodedText" />
@@ -78,12 +79,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="108dp"
         android:ems="10"
         android:hint="Roll No."
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_write_data"
         tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
@@ -92,10 +94,11 @@
         android:id="@+id/btnReadData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="169dp"
         android:text="Read Data"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_roll_no_read"
         tools:ignore="HardcodedText" />
@@ -141,6 +144,7 @@
         android:layout_marginStart="10dp"
         android:text="Delete All"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toEndOf="@+id/btnReadData"
         app:layout_constraintTop_toTopOf="@+id/btnReadData"
         tools:ignore="HardcodedText" />
@@ -153,18 +157,19 @@
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="1dp" />
 
     <Button
         android:id="@+id/btn_update1"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginTop="32dp"
-        android:text="UPDATE DATA"
+        android:layout_marginTop="80dp"
+        android:text="Update Data"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="315dp"
-        tools:ignore="HardcodedText,MissingConstraints" />
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_roll_no"
+        tools:ignore="HardcodedText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
